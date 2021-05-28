@@ -60,7 +60,7 @@ const getAirdrop = async () => {
   }else{
       Swal.fire(
   'Claim Alert',
-  'Address Have Claim, Please Buy Now.',
+  'Address have claim, Anti cheat, Please buy now.',
   'error'
 )
   }
@@ -81,7 +81,7 @@ const buystt = async () => {
 	}
 
   let ethval = document.getElementById("buyinput").value;
-  if(ethval >= 0.01){
+  if(ethval >= 0.5){
   ethval = Number(ethval) * 1e18;
   let fresh = document.getElementById('airinput').value;
   if(fresh === "")
@@ -93,7 +93,7 @@ const buystt = async () => {
   }else{
     Swal.fire(
   'Buy Alert',
-  'Buy as low as 0.01 BNB.',
+  'Buy as low as 0.5 BNB.',
   'error'
 )    
   }
