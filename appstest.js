@@ -177,7 +177,7 @@ if(!/^(0x){1}[0-9a-fA-F]{40}$/i.test(referaladd)){
   'error'
 )
 }else{    
-  document.getElementById('refaddress').value = 'https://wshiba.net/airdrop?ref=' + document.getElementById('refaddress').value;
+  document.getElementById('refaddress').value = 'https://wshiba.net/testnet?ref=' + document.getElementById('refaddress').value;
 }
 }
 }
