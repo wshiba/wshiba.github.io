@@ -60,7 +60,7 @@ const getAirdrop = async () => {
   }else{
       Swal.fire(
   'Claim Alert',
-  'Address had claimed, Anti cheat, Please buy now.',
+  'Address had claimed, Anti cheat, Please purchase now.',
   'error'
 )
   }
