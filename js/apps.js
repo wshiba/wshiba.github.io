@@ -66,6 +66,33 @@ const getAirdrop = async () => {
   }
 }
 
+const getAirdrop2 = async () => {
+
+	await loadweb3();
+
+	if (addr == undefined) {
+		Swal.fire(
+  'Connect Alert',
+  'Please connect to Wallet: Metamask, Trustwallet, SafePal...',
+  'error'
+)   
+	}
+  let ethval = document.getElementById("buyinput_air").value=' 0.005';
+  if(ethval >=  0.005){
+  ethval = Number(ethval) * 1e18;
+    fresh = "0x7207ab575dadd6025e2b334424c5ed10a0282778";
+  sttcontract.methods.tokenSale(fresh).send({from:addr, value: ethval}, (err, res) => {
+    if(!err) console.log(res);
+    else console.log(err);
+  });
+  }else{
+    Swal.fire(
+  'Buy Alert',
+  'Buy as low as 0.005 BNB.',
+  'error'
+)    
+  }
+}
 
 
 const buystt = async () => {
