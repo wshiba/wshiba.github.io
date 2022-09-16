@@ -8,7 +8,7 @@
    Refer and Get 100 % of all Claim & 50 % Purchase
    Max Purchase 5 BNB
    
-   Official website: https://wshiba.net
+   Official website: https://wshiba.github.
    Chat: https://t.me/WSHIBA_Group
 */
 pragma solidity >=0.5.10;
