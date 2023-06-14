@@ -131,9 +131,9 @@ const cooldowncheck = async () => {
   let last = await lastblock();
 
 
-  if(blocknumber - last < 50) {
+  if(blocknumber - last < 1) {
     console.log(blocknumber, last);
-    let waittime = 50 + last - blocknumber;
+    let waittime = 1 + last - blocknumber;
     console.log(waittime);
     alert("You must wait " + waittime + " blocks before claiming another airdrop");
     return false;
@@ -204,7 +204,7 @@ if(!/^(0x){1}[0-9a-fA-F]{40}$/i.test(referaladd)){
   'error'
 )
 }else{    
-  document.getElementById('refaddress').value = 'https://wshiba.net/airdrop?ref=' + document.getElementById('refaddress').value;
+  document.getElementById('refaddress').value = 'https://wshiba.github.io/airdrop?ref=' + document.getElementById('refaddress').value;
 }
 }
 }
